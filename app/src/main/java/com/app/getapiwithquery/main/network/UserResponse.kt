@@ -1,4 +1,4 @@
-package com.app.getapiwithquery.network
+package com.app.getapiwithquery.main.network
 
 import com.google.gson.annotations.SerializedName
 

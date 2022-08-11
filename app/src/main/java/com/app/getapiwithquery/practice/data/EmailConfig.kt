@@ -1,4 +1,4 @@
-package com.app.getapiwithquery.data
+package com.app.getapiwithquery.practice.data
 
 import com.app.getapiwithquery.BuildConfig
 import okhttp3.OkHttpClient
@@ -6,8 +6,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object ApiConfig {
-    fun getApiService(): ApiService {
+object EmailConfig {
+    fun getApiService(): EmailService {
         val interceptor = HttpLoggingInterceptor()
         interceptor.level = HttpLoggingInterceptor.Level.BODY
 
@@ -16,10 +16,10 @@ object ApiConfig {
             .build()
 
         return Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
+            .baseUrl(BuildConfig.BASE_URL2)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(ApiService::class.java)
+            .create(EmailService::class.java)
     }
 }

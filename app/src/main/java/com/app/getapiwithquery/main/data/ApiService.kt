@@ -1,6 +1,6 @@
-package com.app.getapiwithquery.data
+package com.app.getapiwithquery.main.data
 
-import com.app.getapiwithquery.network.UserResponse
+import com.app.getapiwithquery.main.network.UserResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

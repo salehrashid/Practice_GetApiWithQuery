@@ -1,4 +1,4 @@
-package com.app.getapiwithquery.ui
+package com.app.getapiwithquery.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -20,6 +20,8 @@ android {
     buildTypes {
         debug {
             buildConfigField("String", "BASE_URL", BaseUrl)
+            buildConfigField("String", "BASE_URL2", jsonplaceholder)
+            buildConfigField("String", "BASE_URL3", dictionaryapi)
         }
         release {
             minifyEnabled false
